@@ -7,7 +7,53 @@
   <title>Tigerbot AI - 24/7 Automated Trading</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .gradient-bg {
+      background: linear-gradient(135deg, #306599 0%, #0A3C6D 100%);
+    }
 
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+
+    .how-it-works-step {
+      position: relative;
+    }
+
+    .how-it-works-step:not(:last-child):after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -40px;
+      height: 30px;
+      width: 2px;
+      background: #306599;
+      transform: translateX(-50%);
+    }
+
+    .tiger-stripe {
+      background: repeating-linear-gradient(45deg,
+          rgba(0, 0, 0, 0.05),
+          rgba(0, 0, 0, 0.05) 10px,
+          rgba(0, 0, 0, 0.03) 10px,
+          rgba(0, 0, 0, 0.03) 20px);
+    }
+
+    .glow {
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        box-shadow: 0 0 5px -5px #306599;
+      }
+
+      to {
+        box-shadow: 0 0 20px 5px #0A3C6D;
+      }
+    }
+  </style>
 </head>
 
 <body class="font-sans bg-gray-50 text-gray-800">
